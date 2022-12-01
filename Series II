@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Series2
+{
+    public static void main(String[] args)
+    {
+       Scanner sc=new Scanner(System.in);
+       int a=sc.nextInt();
+       int b,c=6,d=5;
+       System.out.print(c+" ");
+       for(int i=1;i<=a-1;i++)
+       {
+           c=c+d;
+               System.out.print(c+" ");
+               d=d+5;
+           
+       }
+       
+    }
+}
