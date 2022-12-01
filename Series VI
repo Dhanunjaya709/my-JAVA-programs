@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Series6
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b,c=0;
+        for(b=1;b<=a;b++)
+        {
+            if(b%2==0)
+            {
+                c=(int)(Math.pow(b,2)-2);
+                System.out.print(c+" ");
+            }
+            else
+            {
+                c=(int)(Math.pow(b,2)-1);
+                System.out.print(c+" ");
+            }
+        }
+    }
+}
