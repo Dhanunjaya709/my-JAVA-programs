@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class Profit
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        float x,y,p,total;
+        x=sc.nextFloat();
+        y=sc.nextFloat();
+        p=x/12;
+        if(p>y)
+        {
+            total=(p-y)*12;
+            System.out.println("Enter the price of a dozen mangoes");
+            System.out.println("Enter the price at which 1 mango is being sold");
+            System.out.printf("Loss : Rs.%.2f",total);
+        }
+        else if(p==y)
+        {
+            total=(p-y)*12;
+            System.out.println("Enter the price of a dozen mangoes");
+            System.out.println("Enter the price at which 1 mango is being sold");
+            System.out.printf("No profit nor loss");
+            
+        }
+        else
+        {
+            total=(y-p)*12;
+            System.out.println("Enter the price of a dozen mangoes");
+            System.out.println("Enter the price at which 1 mango is being sold");
+            System.out.printf("Profit : Rs.%.2f",total);
+            
+        }
+        
+        
+        
+    }
+}
