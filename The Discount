@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Discount
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+       double a=sc.nextDouble();
+        double b=sc.nextDouble();
+         double c=sc.nextDouble();
+        double d=a+b;
+        double e=(d/100)*c;
+        System.out.printf("%.2f \n",d);
+        System.out.printf("%.2f \n",d-e);
+        System.out.printf("%.2f \n",e);
+        
+    }
+}
